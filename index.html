@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,24 +10,43 @@
 
 <body>
     <header>
-        <img src="./assets/images/logo/logoPU.png" alt="logoPU">
+        <div class="logoPU">
+            <img src="./assets/images/logo/logoPU.png" alt="logoPU">
+        </div>
 
-        <ul class="menu">
-            <li><a href="#">Destaques</a></li>
-            <li><a href="#">Entre em contato</a></li>
-            <li><a href="#">Endereço da Loja</a></li>
-        </ul>
+        <nav class="menu">
+            <ul>
+                <a href="#">Entre em contato</a>
+                <a href="#">Endereço da Loja</a>
+            </ul>
+        </nav>
     </header>
+
     <section class="destaques">
+        <h1>Destaques</h1>
         <div class="background">
-            <h1 style="font-size: 45px; color: #fff200;">Destaques</h1>
+            
             <div class="content">
-                <video src="./assets/demos/video demo 2.mp4" autoplay loop muted></video>
-                <p>Lorem ipsum ausdfgbi auidfgbs</p>
+                <div class="demo1" id="videoDemo">
+                    <video src="./assets/demos/video demo 2.mp4" autoplay loop muted></video>
+                    <div class="texto">
+                        <p>Lorem ipsum ausdfgbi auidfgbs</p>
+                    </div>
+                </div>
+                <div class="demo2" id="videoDemo">
+                    <div class="texto">
+                        <p>Lorem ipsum ausdfgbi auidfgbsLorem ipsum ausdfgbi auidfgbs</p>
+                    </div>
+                    <video src="./assets/demos/video demo 1.mp4" autoplay loop muted></video>
+                </div>
+                
             </div>
         </div>
     </section>
-    <section class="contact"></section>
+    <section class="contact">
+        <a href="https://wa.me/33635388"><img src="./assets/vetors/whatsapp.png" alt=""></a>
+        <a href="https://www.instagram.com/paullo_utilidades/"><img src="./assets/vetors/instagram.png" alt=""></a>
+    </section>
     <section class="local"></section>
     <footer></footer>
     
