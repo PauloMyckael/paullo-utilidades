@@ -1,3 +1,4 @@
+/* Reset */
 *{
     margin: 0;
     padding: 0;
@@ -9,22 +10,61 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    /* position esperando conteudo das outras sections
+
+    position: static;
+    */
 }
+
+/* Header -- Widht PC */
 
 header{
     background-color: #020085;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    
 }
 
-ul > li > a {
-    list-style: none;
+.logoPU{
+    padding-top: 1.5vh;
+    padding-bottom: 1.1vh;
+}
+
+.logoPU > img{
+    width: 40vw;
+}
+
+nav{
+    padding-bottom: 1.4vh;
+}
+ul > a {
+    color: #fff200;
+    text-decoration: none;
+    font-size: 1.6rem;
+    padding-left: 1vw;
+    flex-wrap: wrap;
+}
+
+ul > a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo -- Widht PC */
+.destaques{
+    background: rgba(2, 0, 133, 0.6);
+}
+.destaques h1{
+    text-align: center;
+    font-size: 2.8rem;
     color: #fff200;
 }
 
-
-.destaques{
-    background: rgba(2, 0, 133, 0.6);
+#videoDemo{
+    display: flex;
+    
+}
+#videoDemo video{
+    width: 21vw;
 }
