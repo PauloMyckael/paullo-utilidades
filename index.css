@@ -1,0 +1,119 @@
+/*fonte api*/
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap');
+
+/* Reset e apetrechos da pagina */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --amarelo: #eae335;
+    --azul: #040483;
+    --azulRGB: rgb(4,4,131);
+    --amareloRGB: rgb(234,227,53);
+}
+* > p{
+    color: #eae335;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 1.12rem;
+}
+* > h1{
+    font-size: 1.67rem;
+    color: #eae335;
+    padding-bottom: 10px;
+    font-family: 'Signika Negative', sans-serif;
+}
+/*Header - width PC*/
+
+.header{
+    background-color: var(--azul);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1.4vh 0 1vh 0;
+    border-bottom: 2px solid #eae335;
+}
+
+.header > .logo img{
+    width: 25vw;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+
+    /*background-image style*/
+    background-image: linear-gradient(rgba(4, 4, 133, 1.8), rgba(0, 0, 0, 0.2)) ,url(./assets/images/abertura.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    position: static;
+}
+
+/* Conteudo da pagina começa aqui */
+
+.part1{
+    padding: 1.2vh 0 4vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.videozinho > video{
+    width: 25vw;
+}
+
+.cta{
+    flex-direction: column;
+    width: 31vw;
+}
+
+.cta h1{
+    padding: 0.2vh 0 0.1vh 0;
+}
+
+.contact{
+    padding-top: 20px;
+}
+
+.badges{
+    padding-top: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.badges > a > img{
+    width: 17.9vw;
+}
+
+
+.part2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 2px solid #eae335;
+}
+
+.cta2{
+    width: 20vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.cta2 > a > img{
+    width: 19vw;
+}
+
+
+
+
+@media only screen and (max-device-width: 600px) {
+    .part2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
