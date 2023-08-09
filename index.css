@@ -119,9 +119,7 @@
     flex-direction: column;
 }
 
-.postInsta a > img{
-    width: 75%;
-}
+
 .cta2 > h1{
     padding-bottom: 0.9vh;
     font-size: 1.72rem;
@@ -256,11 +254,7 @@
         flex-direction: column-reverse;
         border-bottom: 2px solid #eae335;
     }
-
-    .postInsta a > img{
-        width: 100%;
-    }
-
+    
     .cta2{
         display: flex;
         width: 100%;
@@ -285,7 +279,7 @@
     }
 
     .cta2 > a > img{
-        width: 31vh;
+        width: 30vh;
     }
     
     /* Endereço do estabelecimento // ContentEnd -- max-width 600px */
