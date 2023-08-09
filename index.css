@@ -1,4 +1,5 @@
-/*fonte api*/
+/* fonte api */
+
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap');
 
 /* Reset e apetrechos da pagina */
@@ -14,18 +15,14 @@
     --azulRGB: rgb(4,4,131);
     --amareloRGB: rgb(234,227,53);
 }
-* > p{
+* > p, h1{
     color: #eae335;
     font-family: 'Signika Negative', sans-serif;
-    font-size: 1.12rem;
 }
-* > h1{
-    font-size: 1.67rem;
-    color: #eae335;
-    padding-bottom: 10px;
-    font-family: 'Signika Negative', sans-serif;
-}
-/*Header - width PC*/
+
+
+/* Header -- width PC */
+
 
 .header{
     background-color: var(--azul);
@@ -37,15 +34,19 @@
 }
 
 .header > .logo img{
-    width: 25vw;
+    width: 23vw;
 }
+
+
+/* conteúdo da page // section container -- width PC */
+
 
 .container{
     display: flex;
     flex-direction: column;
 
-    /*background-image style*/
-    background-image: linear-gradient(rgba(4, 4, 133, 1.8), rgba(0, 0, 0, 0.2)) ,url(./assets/images/abertura.jpg);
+    /* background-image style */
+    background-image: linear-gradient(rgba(4, 4, 133, 5), rgba(0, 0, 0, 0.6)) ,url(./assets/images/abertura.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -54,6 +55,9 @@
 }
 
 /* Conteudo da pagina começa aqui */
+
+/* Vídeo e Apresentação // part1 e cta -- width PC */
+
 
 .part1{
     padding: 1.2vh 0 4vh 0;
@@ -68,27 +72,38 @@
 
 .cta{
     flex-direction: column;
-    width: 31vw;
+    width: 31.1vw;
 }
 
 .cta h1{
     padding: 0.2vh 0 0.1vh 0;
+    font-size: 1.7rem;
 }
+
+.cta p{
+    font-size: 1.15rem;
+}
+
+
+/* part1 // contato e badges -- width PC*/
+
 
 .contact{
     padding-top: 20px;
 }
 
 .badges{
-    padding-top: 12px;
+    padding-top: 0.98vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
+
 .badges > a > img{
-    width: 17.9vw;
+    width: 16vw;
 }
 
+/* frase, badge e post do instagram // part2 -- width PC */
 
 .part2{
     display: flex;
@@ -98,22 +113,210 @@
 }
 
 .cta2{
-    width: 20vw;
+    width: 31vw;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
 }
 
-.cta2 > a > img{
-    width: 19vw;
+
+.cta2 > h1{
+    padding-bottom: 0.9vh;
+    font-size: 1.72rem;
 }
 
+.cta2 > p{
+    font-size: 1.22rem;
+}
 
+.cta2 > a > img{
+    width: 18vw;
+}
 
+/* Endereço do estabelecimento // ContentEnd -- width PC */
+
+.contentEnd{
+    background-color: var(--azul);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 2vh;
+}
+
+.contentEnd h1{
+    font-size: 2.2rem;
+    text-align: center;
+    padding: 3vh 0 3.5vh 0;
+}
+
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.image{
+    padding-right: 5vw;
+}
+
+.image > img{
+    width: 50vw;
+}
+
+.end{
+    border-left: 4px solid #eae335;
+    width: 35vw;
+    padding: 3vh 0 3vh 2vh;
+
+    font-size: 1.77rem;
+    font-weight: 600;
+}
+
+/* Reponsividade */
 
 @media only screen and (max-device-width: 600px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /* logo da header */
+    .header > .logo img{
+        width: 40vh;
+    }
+    
+    /* Section container -- max-width 600px */
+    
+    .container{
+        display: flex;
+    }
+    
+    /*  Apresentação (video{display none}) // part1 e cta -- max-width 600px */
+    
+    .part1{
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .cta{
+        width: 100%;
+    }
+    
+    .cta h1{
+        text-align: center;
+        font-size: 1.6rem;
+        
+    }
+
+    .cta p{
+        margin-left: 5px;
+        margin-right: 3px;
+        font-size: 1.17rem;
+    }
+
+    .cta > .jargao{
+        font-size: 1.13rem;
+    }
+
+    .contact h1{
+        padding-bottom: 1.2vh;
+    }
+    .badges{
+        display: flex;
+        align-items: center;
+        padding-top: 1.1vh;
+        padding-bottom: 1.1vh;
+    }
+
+    .contact > .badges > a > img{
+        width: 29vh;
+    }
+    
+    /* part1 -> contato e badges -- max-width 600px */
+    
+    .badges{
+        padding-top: 0.98vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .badges > a > img{
+        width: 17.9vw;
+    }
+    
+    /* frase, badge e post do instagram // part2 -- max-width 600px */
+    
     .part2{
         display: flex;
+       
+
         flex-direction: column-reverse;
+        border-bottom: 2px solid #eae335;
+    }
+    
+    .cta2{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        padding-bottom: 1.3vh;
+    }
+    
+    
+    .cta2 > h1{
+        font-size: 1.4rem;
+        margin-left: 5px;
+        padding-top: 1.2vh;
+    }
+    
+    .cta2 > p{
+        font-size: 1.27rem;
+        margin-left: 5px;
+    }
+
+    .cta2 a{
+        text-align: center;
+    }
+
+    .cta2 > a > img{
+        width: 31vh;
+    }
+    
+    /* Endereço do estabelecimento // ContentEnd -- max-width 600px */
+    
+    .contentEnd{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .contentEnd h1{
+        font-size: 1.97rem;
+        text-align: center;
+    }
+    
+    .content{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .image{
+        padding-right: 0;
+        border-bottom: 4px solid var(--amarelo);
+    }
+    
+    .image > img{
+        width: 44vh;
+    }
+    
+    .end{
+        display: flex;
+        width: 46vh;
+        border-left: 0;
+        padding: 1vh 0 0 0;
+        font-size: 1.44rem;
+        font-weight: 600;
     }
 }
